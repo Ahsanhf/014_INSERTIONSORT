@@ -25,8 +25,8 @@ void input() {         //prosedur untuk input
 }
 
 void insertionSort() {
-    int i, n, temp, j;
-    int arr[9];
+    int i, temp, j;
+    
 
     for (i = 1; i <= n - 1; i++) { //step 1
         temp = arr[i]; //step 2
@@ -40,9 +40,24 @@ void insertionSort() {
     }
 }
 
-int main()
-{
-   
+void display() {
+	cout << endl;
+	cout << "=================" << endl;
+	cout << "element array yang telah tersusun" << endl;
+	cout << "=================" << endl;
+	cout << endl;
+	for (int j = 0; j < n; j++) {
+		cout << arr[j];
+		if (j < n - 1) {
+			cout << " --> ";
+		}
+	}
+	cout << endl;
+	cout << endl;
+	cout << "jumlah pass = " << n - 1 << endl;
+	cout << endl;
 }
+
+
 
 
